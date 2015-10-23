@@ -9,7 +9,7 @@ class ComfortableMexicanSofa::Tag::Helper
   end
   
   def content
-    "<%= #{identifier}(#{params.collect{|p| "'#{p}'"}.join(', ')}) %>"
+    "<%= #{identifier}(#{params.collect{|p| "'#{p}'"}.join(', ')}).html_safe %>"
   end
   
   def render
